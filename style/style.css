@@ -1,0 +1,122 @@
+/* Reset do css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Declara variáveis na raiz */
+:root {
+	--vermelho: #e50914;
+	--preto: #141414;
+	--branco: #f5f5f1;
+	--cinza: #aaa;
+	--info: #6d6d6eb3;
+}
+
+body {
+	background: var(--preto);
+	font-family:'Times New Roman', Times, serif;
+}
+
+h2 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+	color: var(--vermelho);
+	margin-left: 10px;
+}
+
+header nav a {
+	text-decoration: none;
+	cursor: pointer;
+	color:var(--branco);
+	margin-right: 10px;
+}
+
+header nav a:hover{
+	color: var(--cinza);
+	transition: color .4s;
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+header .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Filme principal */
+main .filme-principal {
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../assets/capa-lucifer.jpeg');
+	height: 400px;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+main .container img{
+	width: 344px; 
+	opacity: 1;
+}
+
+main .container .sinopse{
+	color: #fff;
+	font-weight: 400;
+	line-height: normal;
+	width: 100%;
+	font-size: 1.5vw;
+	text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+	margin-top: .1vw;
+}
+
+main .container .buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 30px;
+}
+
+button {
+	appearance: none;
+	border: 0px;
+	border-radius: 4px;
+	cursor: pointer;
+	opacity: 1;
+	padding: 0.4rem;
+
+	font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: block;
+	font-size: 0.8vw;
+	font-weight: bold;
+	line-height: 1.5rem;
+	will-change: background-color,color;
+    word-break: break-word;
+    white-space: nowrap;
+}
+
+main .btn {
+	background-color: white;
+  color: black;
+}
+
+main .btn-info {
+	margin: 0 0 0 10px;
+	background-color: var(--info);
+	color: white;
+	opacity: 1;
+}
+
+.btn-info:hover{
+	opacity: 0.8;
+	transition: opacity .4s;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
