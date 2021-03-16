@@ -1,0 +1,23 @@
+@media screen and (max-width:700px) {
+	header .container {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width:800px) {
+	button {
+		width: 30%;
+		font-size: 0.8rem;
+	}
+
+	.populares {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width:1000px) {
+	.sinopse {
+		max-width: 50%;
+	}
+}

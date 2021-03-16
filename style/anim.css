@@ -51,7 +51,7 @@ header .container {
 
 /* Filme principal */
 main .filme-principal {
-	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../assets/capa-lucifer.jpeg');
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../assets/capaanim.jpeg');
 	height: 400px;
 	background-size: cover;
 	display: flex;
